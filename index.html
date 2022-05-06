@@ -165,7 +165,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-sm btn-warning">Reserve a Table</a>
+                    <button type="button" class="btn btn-block btn-sm btn-warning" id="reservetablebutton">Reserve a Table</a>
                 </div>
             </div>
         </div>
@@ -325,6 +325,14 @@
                     $("#carouselButton").children("span").addClass("fa-pause");
                 }
             });
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#reservetablebutton").click(function(){
+                //It could also be done by using $("#reservetablemodal").modal("show");
+                $("#reservetablemodal").modal("toggle");
+            })
         })
     </script>
 </body>
