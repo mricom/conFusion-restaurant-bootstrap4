@@ -76,7 +76,7 @@
         </div>
     </div>
 
-    <div id="reservetablemodal" class="modal fade" role="dialog">
+    <div id="reserveTableModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -165,7 +165,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-sm btn-warning" id="reservetablebutton">Reserve a Table</a>
+                    <button type="button" class="btn btn-block btn-sm btn-warning" id="reserveTableButton">Reserve a Table</a>
                 </div>
             </div>
         </div>
@@ -329,9 +329,9 @@
     </script>
     <script>
         $(document).ready(function(){
-            $("#reservetablebutton").click(function(){
-                //It could also be done by using $("#reservetablemodal").modal("show");
-                $("#reservetablemodal").modal("toggle");
+            $("#reserveTableButton").click(function(){
+                //It could also be done by using $("#reserveTableModal").modal("toggle");
+                $("#reserveTableModal").modal("toggle");
             })
         })
     </script>
