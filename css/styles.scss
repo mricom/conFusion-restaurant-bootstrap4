@@ -83,7 +83,7 @@ a#loginButton:hover{
 .modal-header{
     background-color: $background-dark;
     color: floralwhite;
-    button{
+    button.close{
         color: floralwhite;
     }
 }
