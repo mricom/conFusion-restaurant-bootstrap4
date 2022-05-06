@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a>
+                    <a id="loginButton">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -332,6 +332,10 @@
             $("#reserveTableButton").click(function(){
                 //It could also be done by using $("#reserveTableModal").modal("toggle");
                 $("#reserveTableModal").modal("toggle");
+            })
+            $("#loginButton").click(function(){
+                //It could also be done by using $("#loginModal").modal("show");
+                $("#loginModal").modal("toggle");
             })
         })
     </script>
